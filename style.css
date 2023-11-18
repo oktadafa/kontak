@@ -22,12 +22,25 @@ header.scrolled {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 700;
+  position: relative;
 }
-.navbar-nav .nav-link:hover {
-  color: #004a87;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #004a87; /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #004a87;
+  transition: width 0.3s ease;
 }
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+  /* Ganti dengan kode warna teks saat dihover yang diinginkan */
+}
+
 .navbar-nav .first-navbar {
   color: #004a87;
 }
