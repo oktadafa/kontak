@@ -45,6 +45,7 @@ header.scrolled {
   color: #004a87;
   position: relative;
 }
+
 .navbar-nav .first-navbar::before {
   position: absolute;
   bottom: 0px;
@@ -52,6 +53,7 @@ header.scrolled {
   width: 100%;
   background-color: #004a87;
 }
+
 .footer {
   margin-top: 100px;
 }
