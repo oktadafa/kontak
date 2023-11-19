@@ -43,6 +43,14 @@ header.scrolled {
 
 .navbar-nav .first-navbar {
   color: #004a87;
+  position: relative;
+}
+.navbar-nav .first-navbar::before {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #004a87;
 }
 .footer {
   margin-top: 100px;
